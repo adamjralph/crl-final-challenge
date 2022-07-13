@@ -99,11 +99,15 @@ li {
 .header-content__heading {
   font-size: 4rem;
   color: #ffffff;
-  margin-block: 6rem;
+  margin-block: 4rem;
 }
 
 .header-content__heading--highlight {
   color: #a59678;
+}
+
+.header-content__text {
+  margin-block-end: 6rem;
 }
 
 .header-paragraph {
@@ -113,6 +117,7 @@ li {
 }
 
 .header-content__button {
+  width: 100%;
   padding-bottom: 2em;
 }
 
@@ -121,7 +126,7 @@ li {
   background-color: rgba(230, 230, 230, 0.932);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 870px) {
   .header-content__heading {
     font-size: 5.625rem;
   }
@@ -162,10 +167,11 @@ li {
   .header-content__heading {
     padding-inline-end: 2.5rem;
     width: 90%;
+    margin-block: 10rem;
   }
 
   .header-content__text {
-    margin-block: 6rem;
+    margin-block: 10rem;
     margin-inline-start: 3rem;
     display: flex;
     flex-direction: column;
