@@ -98,10 +98,10 @@ li {
   align-items: center;
   justify-content: center;
   background-color: #2e323f;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   width: 100%;
-  transform: height(60vh);
-  transition: height 0.4s ease;
+  /* transform: height(60vh); */
+  /* transition: height 0.4s ease; */
 }
 
 .nav__menu > div > div {
@@ -317,34 +317,36 @@ li {
 
   .nav__container {
     position: relative;
-    justify-content: flex-end;
     align-items: center;
+    /* justify-content: space-between; */
     padding-block: 0;
     height: auto;
     max-width: 75rem;
     margin-inline: auto;
   }
 
+  .logo {
+    position: absolute;
+  }
+
   .nav__menu {
     position: relative;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
     visibility: visible;
-    /* width: 100%; */
-    /* max-width: 75rem; */
     padding-block: 0;
-    /* margin: auto; */
+    margin-inline: auto;
   }
 
   .nav__menu > div {
-    display: flex;
+    /* align-items: center; */
     justify-content: flex-end;
+    background-color: #2e323f;
     width: 100%;
   }
 
   .nav__menu > div > div {
     opacity: 1;
+    /* margin-inline: auto; */
+    /* margin-inline-end: 0; */
   }
 
   .nav__links {
@@ -393,36 +395,45 @@ li {
   .info-bar__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   .info-bar__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding-block: 2rem;
+    margin-inline: auto;
   }
 
   .info-bar__section + .info-bar__section {
     padding-block: 0;
-    padding-inline-start: 1em;
+    padding-inline-start: 3rem;
   }
 
   .info-bar__text,
   .info-bar__heading {
-    max-width: 85%;
+    width: 100%;
+    /* max-width: 80%; */
   }
 
   /* Main article */
   .main-article__container {
     display: flex;
+    align-items: space-between;
+    justify-content: space-between;
   }
 
   .main-article__article {
-    padding-inline-end: 4rem;
+    /* padding-inline-end: 4rem; */
   }
 
   /* Sidebar */
   .main-article__sidebar {
     display: flex;
     flex-direction: column;
-    margin-inline: 4rem;
+    margin-inline-start: 4rem;
   }
 }
