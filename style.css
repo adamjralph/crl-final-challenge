@@ -63,7 +63,6 @@ li {
 /* Navbar */
 
 .nav {
-  background-color: #2e323f;
   font-size: 1.125rem;
 }
 
@@ -77,7 +76,15 @@ li {
   padding-top: 3em;
   width: 100%;
   height: 50vh;
+  /* visibility: hidden; */
+  overflow: hidden;
+}
+
+.nav__container > div {
   background-color: #2e323f;
+  width: 100%;
+  height: 50vh;
+  z-index: -1;
 }
 
 /* Hamburger */
@@ -102,7 +109,6 @@ li {
   height: 40px;
   padding: 1rem;
   background-color: #2e323f;
-  /* background-color: #ffffff; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,6 +124,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.4s ease;
 }
 
 .hamburger > div::before,
@@ -135,11 +142,29 @@ li {
   top: 10px;
 }
 
+/* Toggler Animation */
+.toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* Turns lines into x */
+.toggler:checked + .hamburger > div::before,
+.toggler:checked + .hamburger > div::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Rotate on hover / focus when checked */
+.toggler:checked:hover + .hamburger > div {
+  transform: rotate(585deg);
+}
+
 .nav__logo {
   height: 1.875rem;
 }
 
 .nav__links {
+  /* display: none; */
   text-align: center;
   margin-inline: auto;
   margin-block: 1.5em;
@@ -150,7 +175,6 @@ li {
 
 .nav-item:nth-child(4) {
   margin-top: 3em;
-  /* border: 1px red solid; */
 }
 
 /* Header content */
@@ -243,25 +267,32 @@ li {
     display: none;
   }
 
+  .nav {
+    background-color: #2e323f;
+    width: 100%;
+    margin-inline: auto;
+  }
+
   .nav__container {
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
     padding-block: 0;
     height: auto;
+    max-width: 75rem;
+    margin-inline: auto;
   }
 
-  .nav__logo {
-    margin-block: auto;
-    margin-inline-start: 3rem;
+  .nav__container > div {
+    display: none;
   }
 
   .nav__links {
     display: flex;
     align-items: center;
     padding-block: 0;
-    margin-inline-end: 3rem;
+    margin-inline-end: 0;
   }
 
   .nav-item {
