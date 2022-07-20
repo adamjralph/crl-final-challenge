@@ -403,7 +403,7 @@ li {
 
   .header-content__text {
     margin-block: 10rem;
-    margin-inline-start: 3rem;
+    margin-inline-start: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -412,6 +412,8 @@ li {
 
   .header-paragraph {
     margin-bottom: 1em;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
   }
   .header-content__button {
     padding-bottom: 0.5rem;
