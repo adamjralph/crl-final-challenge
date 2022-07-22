@@ -305,6 +305,11 @@ li {
   margin-inline: auto;
 }
 
+/* Footer */
+.footer {
+  background-color: #2e323f;
+}
+
 @media (min-width: 875px) {
   .header-content__heading {
     font-size: 5.625rem;
