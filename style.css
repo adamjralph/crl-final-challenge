@@ -316,6 +316,18 @@ li {
   color: #ffffff;
 }
 
+.footer__heading {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.25rem;
+  text-align: center;
+  font-weight: 700;
+  padding-block: 5rem;
+}
+
+.footer__section-heading {
+  color: #a59678;
+}
+
 @media (min-width: 875px) {
   .header-content__heading {
     font-size: 5.625rem;
