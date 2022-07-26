@@ -328,7 +328,12 @@ li {
   color: #a59678;
 }
 
-@media (min-width: 875px) {
+.footer__container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 950px) {
   .header-content__heading {
     font-size: 5.625rem;
   }
@@ -488,5 +493,10 @@ li {
     display: flex;
     flex-direction: column;
     margin-inline-start: 4rem;
+  }
+
+  /* Footer */
+  .footer__container {
+    flex-direction: row;
   }
 }
