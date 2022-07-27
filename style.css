@@ -331,6 +331,32 @@ li {
 .footer__container {
   display: flex;
   flex-direction: column;
+  padding-block-end: 5rem;
+}
+
+.footer-content + .footer-content {
+  padding-inline-start: 5rem;
+}
+
+.footer-content li {
+  font-family: "Montserrat", sans-serif;
+  padding-block: 0.5rem;
+}
+
+.footer__info {
+  max-width: 40%;
+}
+
+.footer__sitemap {
+  width: 20%;
+}
+
+.footer__more {
+  width: 20%;
+}
+
+.footer__even-more {
+  width: 20%;
 }
 
 @media (min-width: 950px) {
