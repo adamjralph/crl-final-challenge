@@ -334,10 +334,6 @@ li {
   padding-block-end: 5rem;
 }
 
-.footer-content + .footer-content {
-  padding-inline-start: 5rem;
-}
-
 .footer-content li {
   font-family: "Montserrat", sans-serif;
   padding-block: 0.5rem;
@@ -352,7 +348,7 @@ li {
 }
 
 .footer__more {
-  width: 20%;
+  max-width: 20%;
 }
 
 .footer__even-more {
@@ -524,5 +520,9 @@ li {
   /* Footer */
   .footer__container {
     flex-direction: row;
+  }
+
+  .footer-content + .footer-content {
+    padding-inline-start: 5rem;
   }
 }
