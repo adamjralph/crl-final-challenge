@@ -326,6 +326,7 @@ li {
 
 .footer__section-heading {
   color: #a59678;
+  padding-block-end: 1.5rem;
 }
 
 .footer__container {
@@ -334,9 +335,17 @@ li {
   padding-block-end: 5rem;
 }
 
+.footer-content {
+  padding-block-end: 2rem;
+}
+
 .footer-content li {
   font-family: "Montserrat", sans-serif;
   padding-block: 0.5rem;
+}
+
+.about__heading {
+  /* padding-block-end: 1rem; */
 }
 
 .footer__info {
